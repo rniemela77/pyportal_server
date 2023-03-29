@@ -20,5 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 // http://127.0.0.1:8000/api/hello returns json {"message":"Hello World"}
 Route::get('/hello', function () {
-    return response()->json(['message' => 'Hello World']);
+    return response()->json(['message' => 'Hello World!']);
 });
