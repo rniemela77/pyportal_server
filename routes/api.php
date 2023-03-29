@@ -17,3 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+// http://127.0.0.1:8000/api/hello returns json {"message":"Hello World"}
+Route::get('/hello', function () {
+    return response()->json(['message' => 'Hello World']);
+});
